@@ -40,7 +40,7 @@ def bucket_delete():
     
     return jsonify({'msg': 'Item deleted!'})
 
-@app.route("/bucket", methods=["GET"])
+@app.route("/bucket", methods=["GETpip install flask bs4 requests pymongo dnspython"])
 def bucket_get():
     buckets_list = list(db.bucket.find({},{'_id':False}))
     return jsonify({'buckets':buckets_list})
